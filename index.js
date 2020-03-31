@@ -31,15 +31,15 @@ var data = [
     {"year": 1994, "name":"gamma", "value": 25},
     {"year": 1994, "name":"delta", "value": 32}
   ]
-  var visualization = d3plus.viz()
-    .container("#viz2")
-    .data(data)
-    .type("bar")
-    .id("name")
-    .x("year")
-    .y("value")
-    .axes({"ticks" : false})
-    .draw()
+var visualization = d3plus.viz()
+  .container("#viz2")
+  .data(data)
+  .type("bar")
+  .id("name")
+  .x("year")
+  .y("value")
+  .axes({"ticks" : false})
+  .draw()
 
 var data = [
     {"year": 1991, "name":"alpha", "value": 15},
