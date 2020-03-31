@@ -63,9 +63,9 @@ var visualization = d3plus.viz()
   .container("#viz3")
   .data(data3)
   .config({
-    groupBy:(["year"]),
-   type:"Whisker"
+    groupBy:(["year"])
   })
+  .type("box")
   .id("name")
   .x("year")
   .y("value")
