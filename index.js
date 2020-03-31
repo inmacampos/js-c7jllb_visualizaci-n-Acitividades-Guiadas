@@ -59,16 +59,9 @@ var data3 = [
         {"year": 1991, "name":"delta2", "value": 17},
         {"year": 1992, "name":"delta2", "value": 35}
       ]
-var visualization = d3plus.viz()
-  .container("#viz3")
+new d3plus.BoxWhisker()
   .data(data3)
-  .config({
-    groupBy:(["year","value"])
-  })
-  .type("boxwhisker")
-  .id("name")
+  .groupBy(["year", "value"])
   .x("year")
   .y("value")
-  .axes({"ticks" : false})
-  .size(100)
-  .draw()
+  .draw();
