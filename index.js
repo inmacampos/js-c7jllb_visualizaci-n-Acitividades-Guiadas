@@ -59,25 +59,12 @@ var data3 = [
         {"year": 1991, "name":"delta2", "value": 17},
         {"year": 1992, "name":"delta2", "value": 35}
       ]
-new d3plus.BoxWhisker()
-    .config({
-      data: data3,
-      groupBy: ["year", "value"],
-      shapeConfig: {
-        outlier: function(d) {
-          return d.year === "1991" ? "Circle" : "Rect";
-        },
-        outlierConfig: {
-          Rect: {
-            fill: "green"
-          },
-          Circle: {
-            fill: "red"
-          }
-        }
-      },
-      x: "year",
-      y: "value"
-    })
-    .render();
-}
+var visualization = d3plus.viz()
+  .container("#viz3")
+  .data(data3)
+  .type("whisker")
+  .id("name")
+  .x("year")
+  .y("value")
+  .axes({"ticks" : false})
+  .draw()
