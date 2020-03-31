@@ -31,7 +31,7 @@ var data = [
     {"year": 1994, "name":"delta", "value": 32}
   ]
   var visualization = d3plus.viz()
-    .container("#viz")
+    .container("#viz2")
     .data(data)
     .type("bar")
     .id("name")
