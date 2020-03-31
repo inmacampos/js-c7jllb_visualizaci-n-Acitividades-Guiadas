@@ -70,9 +70,4 @@ var visualization = d3plus.viz()
   .x("year")
   .y("value")
   .axes({"ticks" : false})
-  .ui([{ 
-        "label": "Visualization Type",
-        "method": "type", 
-        "value": ["scatter","box"]
-      }])
   .draw()
