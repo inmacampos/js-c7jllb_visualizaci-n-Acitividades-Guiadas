@@ -1,3 +1,6 @@
+//Import stylesheets
+import './style.css';
+
 //Gráfico de columnas. Mi 1º gráfico
 var visualization = d3plus.viz()
 .container("#viz1")
@@ -8,3 +11,4 @@ var visualization = d3plus.viz()
 .x("year")
 .y("value")
 .draw()
+
